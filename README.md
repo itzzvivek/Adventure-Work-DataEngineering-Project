@@ -1,13 +1,13 @@
-# ⚙️ Azure Data Engineering Project
+#Azure Data Engineering Project
 
 A complete end-to-end Azure Data Engineering pipeline using the medallion architecture: Bronze → Silver → Gold. The project simulates a real-world data analytics solution using Azure services.
 
-## 📦 Dataset
+##Dataset
 
 - **Source**: [AdventureWorks Dataset](https://www.kaggle.com/datasets/ukveteran/adventure-works)
 - The dataset was pushed to GitHub and ingested into Azure Data Lake Storage Gen2 using Azure Data Factory.
 
-## 🧰 Tools & Technologies
+##Tools & Technologies
 
 - **Azure Data Factory** – Ingestion & pipeline orchestration  
 - **Azure Data Lake Gen2** – Centralized data lake storage  
@@ -15,7 +15,7 @@ A complete end-to-end Azure Data Engineering pipeline using the medallion archit
 - **Azure Synapse Analytics** – Analytical querying and reporting  
 - **Power BI** – Data visualization (optional)
 
-## 🧱 Project Architecture
+##Project Architecture
 
 1. **Bronze Layer**  
    Raw data ingested from GitHub to Azure Data Lake using ADF pipelines. Dynamic parameters were configured using JSON files with GitHub URLs.
@@ -26,7 +26,7 @@ A complete end-to-end Azure Data Engineering pipeline using the medallion archit
 3. **Gold Layer**  
    Processed and aggregated data ready for analytics. Connected to Synapse Analytics using external tables and made available for reporting.
 
-## ⚙️ Key Features
+##Key Features
 
 - Parameterized ingestion using ADF’s `Copy Data`, `ForEach`, and `Lookup` activities  
 - Managed identities and secure data access  
@@ -34,7 +34,7 @@ A complete end-to-end Azure Data Engineering pipeline using the medallion archit
 - Scalable transformation using Databricks notebooks  
 - Reporting-ready data exposed via Synapse Analytics
 
-## 📁 Project Structure
+##Project Structure
 
 
 
